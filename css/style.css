@@ -1,0 +1,213 @@
+a, a:hover {
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+#header {
+    position: absolute;
+    width: 100%;
+    background: #E5E5E5;;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__nav__item {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0 20px;
+}
+
+.header__nav__item:hover:before {
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 1px;
+    background: #000;
+    margin: 0 auto;
+
+}
+
+.header__nav__item:hover:after {
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 1px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    transition: 0.7s;
+}
+
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background: #2C2C2C;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    background: #E5E5E5;;
+}
+
+.hero__img {
+    width: 470px;
+    height: 629px;
+}
+
+.hero__title {
+    padding-top: 238px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+
+.hero__desc {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: #333333;
+}
+
+.hero__p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #BDBDBD;
+}
+
+.hero__img {
+    padding-top: 80px;
+}
+
+.btn {
+    padding: 14px 50px;
+    margin-top: -67px;
+    background: white;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #BDBDBD;
+}
+
+p {
+    color: #333333;
+}
+
+.slick-arrow {
+    position: absolute;
+}
+
+.slick-arrow.slick-next {
+    background: url("../images/arrow-long-right.svg") no-repeat center/30px;
+    font-size: 0;
+    top: 450px;
+    left: 50px;
+    width: 60px;
+    border: none;
+    height: 50px;
+}
+
+.slick-arrow.slick-prev {
+    background: url("../images/arrow-long-left.svg") no-repeat center/30px;
+    font-size: 0;
+    top: 450px;
+    z-index: 4;
+    border: none;
+    height: 50px;
+    width: 60px;
+}
+
+.burger {
+    position: fixed;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    right: 100px;
+    top: 20px;
+
+}
+
+.burger span {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #000;
+
+}
+
+.burger span:before {
+    content: '';
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+
+    top: 10px
+}
+
+.burger span:after {
+    content: '';
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 3px;
+    top: 20px
+}
+
+.show-menu {
+    transform: rotate(45deg);
+    color: #fff;
+    background: transparent;
+    right: 140px;
+    position: fixed;
+    transition: 1s;
+
+}
+
+.show-menu span {
+    background: transparent;
+}
+
+.show-menu span:before {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: 0.9s;
+    transform: rotate(-45deg);
+}
+
+.show-menu span:after {
+    top: 0;
+    transition: 0.9s;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    transform: rotate(45deg);
+}
+
+
+.header__nav__item.show .header__nav__item {
+    margin: 10px 0 0;
+}
